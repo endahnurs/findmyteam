@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgnews"
+        android:layout_width="107dp"
+        android:src="@drawable/logo"
+        android:layout_height="83dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/judulnews"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:text="hahaha"/>
+
+        <TextView
+            android:id="@+id/contextneews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="hahahahahahahahahahahahahahahahahahahahahahahahaha"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="33dp"
+                android:textSize="10dp"
+                android:text="Date"/>
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="33dp"
+                android:textSize="10dp"
+                android:text="View"/>
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="33dp"
+                android:textSize="10dp"
+                android:text="Team"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="read"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15dp"
+                android:text="Comment"
+                android:paddingLeft="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

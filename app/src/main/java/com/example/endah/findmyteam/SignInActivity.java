@@ -40,5 +40,17 @@ public class SignInActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+        lin.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent it = new Intent(SignInActivity.this, MainActivity.class);
+                startActivity(it);
+            }
+        });
+
     }
+
+
 }

@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.endah.findmyteam.MainActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:weightSum="1">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/newscomptxtview"
+        android:layout_width="162dp"
+        android:layout_height="125dp"
+        android:background="#2F4F4F"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:text="News Comp"/>
+
+        <TextView
+            android:id="@+id/myteamtxtview"
+            android:layout_height="125dp"
+            android:background="#2F4F4F"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="My Team"
+            android:layout_width="162dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/findpeopletxtview"
+            android:layout_height="125dp"
+            android:textColor="#FFFFFF"
+            android:background="#2F4F4F"
+            android:textAlignment="center"
+            android:text="Finding People"
+            android:layout_width="162dp" />
+
+        <TextView
+            android:id="@+id/historytxtview"
+            android:layout_width="162dp"
+            android:textAlignment="center"
+            android:layout_height="125dp"
+            android:background="#2F4F4F"
+            android:textColor="#FFFFFF"
+            android:text="History"
+            android:letterSpacing="0.2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:text="Harga menentukan kualitas, pengorbanan menentukan hasil"/>
+    </LinearLayout>
+</LinearLayout>
