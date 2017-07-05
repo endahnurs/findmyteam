@@ -138,6 +138,14 @@
         android:orientation="vertical"
         android:gravity="bottom"
         android:layout_marginBottom="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText" />
+
         <TextView
             android:id="@+id/sup"
             android:layout_width="match_parent"

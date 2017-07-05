@@ -19,7 +19,7 @@
         <activity android:name=".SignUpActivity" android:theme="@style/Main"></activity>
         <activity android:name=".MainActivity" android:theme="@style/Main"></activity>
         <activity android:name=".NewsCompActivity"></activity>
-        <activity android:name=".NewsCompActivity"></activity>
+        <activity android:name=".TeamViewActivity"></activity>
     </application>
 
 </manifest>

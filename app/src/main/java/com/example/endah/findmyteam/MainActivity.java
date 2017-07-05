@@ -34,5 +34,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+        myTeam .setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent it;
+                it = new Intent(MainActivity.this, TeamViewActivity.class);
+                startActivity(it);
+            }
+        });
     }
 }
