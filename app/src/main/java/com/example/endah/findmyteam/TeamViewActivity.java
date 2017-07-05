@@ -10,8 +10,8 @@ import android.widget.ListView;
 
 public class TeamViewActivity extends Activity {
     ListView teamList;
-    String teamname[] = {"India", "China", "australia", "Portugle", "America", "NewZealand", "India", "China", "australia", "Portugle", "America", "NewZealand"};
-    int ppteam[] = {R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo};
+    String teamname[] = {"NewZealand", "India", "China", "australia", "Portugle", "America", "NewZealand"};
+    int ppteam[] = {R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

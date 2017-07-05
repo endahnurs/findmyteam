@@ -20,6 +20,7 @@
         <activity android:name=".MainActivity" android:theme="@style/Main"></activity>
         <activity android:name=".NewsCompActivity"></activity>
         <activity android:name=".TeamViewActivity"></activity>
+        <activity android:name=".CommentViewActivity"></activity>
     </application>
 
 </manifest>
