@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+    <ImageView
+        android:id="@+id/imgprofiltextview"
+        android:layout_width="63dp"
+        android:src="@drawable/logo"
+        android:layout_height="43dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/judulprofiltextview"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:text="hahaha"/>
+
+        <TextView
+            android:id="@+id/contextneewsprofiltextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:text="hahahahahahahahahahahahahahahahahahahahahahahahaha"/>
+
+    </LinearLayout>
+</LinearLayout>

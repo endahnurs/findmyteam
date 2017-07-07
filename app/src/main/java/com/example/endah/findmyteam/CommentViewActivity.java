@@ -18,6 +18,7 @@ public class CommentViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comment_view_activity);
+
         commentlist = (ListView) findViewById(R.id.commentListView);
         CommentViewCustomAdapter customAdapter = new CommentViewCustomAdapter(getApplicationContext(), username, pp, comment);
         commentlist.setAdapter(customAdapter);

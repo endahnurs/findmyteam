@@ -4,11 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#2F4F4F"
         android:text="Create Your Team"
-        android:textSize="30dp"
-        android:textAlignment="center" />
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:gravity="center"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,5 +50,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="#2F4F4F"
         android:text="Create"/>
 </LinearLayout>

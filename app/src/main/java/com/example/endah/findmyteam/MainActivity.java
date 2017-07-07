@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent it;
-                it = new Intent(MainActivity.this, CommentViewActivity.class);
+                it = new Intent(MainActivity.this, TeamViewActivity.class);
                 startActivity(it);
             }
         });

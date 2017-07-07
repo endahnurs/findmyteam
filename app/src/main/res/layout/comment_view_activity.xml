@@ -7,4 +7,17 @@
     android:dividerHeight="1dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"></ListView>
+
+    <ImageView
+        android:id="@+id/icsend"
+        android:src="@mipmap/send"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/icsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

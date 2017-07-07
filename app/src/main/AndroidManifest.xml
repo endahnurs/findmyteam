@@ -21,6 +21,8 @@
         <activity android:name=".NewsCompActivity"></activity>
         <activity android:name=".TeamViewActivity"></activity>
         <activity android:name=".CommentViewActivity"></activity>
+        <activity android:name=".ProfileUserActivity" android:theme="@style/Main"></activity>
+
     </application>
 
 </manifest>
