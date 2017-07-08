@@ -1,6 +1,8 @@
 package com.example.endah.findmyteam;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,8 @@ public class NewsCustomAdapter extends BaseAdapter {
     String isi[];
     int img[];
     LayoutInflater inflter;
+
+
 
     public NewsCustomAdapter(Context applicationContext, String[] judul, int[] images, String[] isi) {
         this.context = applicationContext;
@@ -42,6 +46,7 @@ public class NewsCustomAdapter extends BaseAdapter {
     public long getItemId(int i) {
         return 0;
     }
+
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {

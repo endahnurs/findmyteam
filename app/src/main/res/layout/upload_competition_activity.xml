@@ -24,7 +24,7 @@
             android:src="@drawable/backgrd"
             android:layout_width="wrap_content"
             android:layout_height="91dp"
-            android:layout_weight="30dp" />
+            android:layout_weight="2.83" />
 
         <LinearLayout
             android:layout_width="wrap_content"
