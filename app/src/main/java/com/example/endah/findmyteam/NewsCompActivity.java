@@ -21,7 +21,7 @@ public class NewsCompActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news_comp_activity);
         newsList = (ListView) findViewById(R.id.newsSimpleListView);
-        NewsCustomAdapter customAdapter = new NewsCustomAdapter(getApplicationContext(), judul, flags, contentNews);
+        NewsCustomAdapter customAdapter = new NewsCustomAdapter(NewsCompActivity.this, judul, flags, contentNews);
         newsList.setAdapter(customAdapter);
 
     }
