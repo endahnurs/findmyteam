@@ -41,7 +41,7 @@
             <ImageView
                 android:paddingTop="20dp"
                 android:paddingBottom="10dp"
-                android:src="@drawable/ic_group"
+                android:src="@drawable/ic_newa"
                 android:layout_width="132dp"
                 android:layout_height="103dp"
                 android:layout_marginLeft="8dp"
@@ -74,7 +74,7 @@
                 android:background="#2F4F4F"
                 android:textColor="#FFFFFF"
                 android:textAlignment="center"
-                android:text="My Team" />
+                android:text="Post Event" />
 
 
         </GridLayout>

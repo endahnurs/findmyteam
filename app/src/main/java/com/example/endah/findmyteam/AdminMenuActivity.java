@@ -40,7 +40,7 @@ public class AdminMenuActivity extends Activity {
             public void onClick(View v)
             {
                 Intent it;
-                it = new Intent(AdminMenuActivity.this, MyTeamActivity.class);
+                it = new Intent(AdminMenuActivity.this, PostCompActivity.class);
                 startActivity(it);
             }
         });
