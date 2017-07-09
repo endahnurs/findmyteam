@@ -1,47 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:src="@drawable/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="144dp" />
     <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#A52A2A"
         android:id="@+id/judulnewsview"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
-        android:text="ini judulnya"
+        android:text="ITCC 2017 Information Technology Creative"
         android:textAllCaps="true"
         android:textStyle="bold"
-        android:textSize="35dp"/>
+        android:textSize="20dp"/>
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:paddingLeft="12dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="read"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="12dp"
-            android:text="comment"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="12dp"
-            android:text="post"/>
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="remote: Resolving deltas: 100% (9/9), completed with 8 local objects.
-To https://github.com/endahnurs/findmyteam.git
-   941e6ab..8896d52  master -> master
-Branch master set up to track remote branch master from origin.
-"/>
+        android:orientation="horizontal">
+
+        <ImageView
+            android:paddingBottom="8dp"
+            android:layout_gravity="center"
+            android:id="@+id/imagenews"
+            android:src="@drawable/posterlombabesar"
+            android:layout_width="wrap_content"
+            android:layout_height="266dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#455A64"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="3dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Deadline : 25 Agustus 2015"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="16dp"
+            android:rowCount="1">
+
+            <TextView
+                android:id="@+id/createteamtextview"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Create a New Team"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jointeam"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Joined Team"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/commenttextview2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Comment"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/kontentextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mahasiswa merupakan generasi penerus yang pada gilirannya akan memikul tanggung jawab guna mensukseskan pembangunan nasional dan memajukan bangsa dan negara. Kebutuhan akan kemampuan dan profesionalisme menuntut adanya pelatihan dan usaha yang sungguh-sungguh. Oleh karena itu guna meningkatkan wawasan dan kemampuan kami pada bidang manajemen dan aplikasi serta juga untuk memenuhi persyaratan wajib perkuliahan maka kami bermaksud agar dapat melaksanakan kerja praktek
+Dalam era globalisasi dunia dan perdagangan yang bebas diperlukan adanya industri yang maju dengan tenaga kerja yang profesional di bidangnya masing-masing. Untuk itu selain mendapatkan berbagai teori di bangku pendidikan formal, maka diperlukan adanya pengalaman kerja di lapangan.
+Salah satu cara untuk menambah pengalaman kerja tersebut adalah dengan mengadakan kerja praktek di industri-industri yang berkaitan dengan bidang studi yang dipelajari di bangku kuliah.
+Kerja praktek merupakan salah satu mata kuliah di Jurusan Teknik Informatika POLITEKNIK ELEKTRONIKA NEGERI SURABAYA (PENS), sebagai sarana untuk latihan mengembangkan dan menerapkan ilmu pengetahuan yang diperoleh di bangku kuliah. Selain itu dengan kerja praktek akan diperoleh gambaran yang jelas tentang berbagai hal yang berkaitan dengan berbagai masalah, khususnya masalah pengaturan sistem di tempat kerja praktek.
+Dalam mencapai usaha di atas, tentunya tidak lepas dari peran serta berbagai pihak,baik dari kalangan kampus dan dunia usaha serta semua instansi terkait.
+"
+        android:textSize="17dp" />
+
 </LinearLayout>
+</ScrollView>

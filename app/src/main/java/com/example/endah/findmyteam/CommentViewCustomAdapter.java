@@ -1,12 +1,17 @@
 package com.example.endah.findmyteam;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by endah on 7/5/2017.
@@ -14,13 +19,13 @@ import android.widget.TextView;
 
 public class CommentViewCustomAdapter extends BaseAdapter {
 
-    Context context;
-    String namauser[];
-    String komen[];
-    int imgpp[];
+    CommentViewActivity context;
+    String namauser;
+    String komen;
+    int imgpp;
     LayoutInflater inflter;
 
-    public CommentViewCustomAdapter(Context applicationContext, String[] namauser, int[] imgpp, String[] komen) {
+    public CommentViewCustomAdapter(CommentViewActivity applicationContext, String namauser, int imgpp, String komen) {
         this.context = applicationContext;
         this.komen = komen;
         this.namauser = namauser;
@@ -30,7 +35,7 @@ public class CommentViewCustomAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return namauser.length;
+        return 10;
     }
 
     @Override
@@ -45,14 +50,23 @@ public class CommentViewCustomAdapter extends BaseAdapter {
 
 
 
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(final int i, View view, ViewGroup viewGroup) {
         view = inflter.inflate(R.layout.comment, null);
         TextView comment = (TextView)           view.findViewById(R.id.commenttextview);
         TextView username = (TextView)           view.findViewById(R.id.nametextview);
-        ImageView ppimg = (ImageView) view.findViewById(R.id.pptextview);
-        username.setText(namauser[i]);
-        comment.setText(komen[i]);
-        ppimg.setImageResource(imgpp[i]);
+        ImageView ppimg = (ImageView) view.findViewById(R.id.ppteam);
+        username.setText(namauser);
+        comment.setText(komen);
+        ppimg.setImageResource(imgpp);
+
+        username.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //buka intent yang diinginkan (contoh sign in activity)
+                Intent detail = new Intent(context, ProfileUserActivity.class);
+                context.startActivity(detail);
+            }
+        });
         return view;
     }
 }

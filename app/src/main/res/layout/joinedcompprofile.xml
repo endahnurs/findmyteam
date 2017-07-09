@@ -4,13 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="10dp">
+
     <ImageView
         android:id="@+id/imgprofiltextview"
         android:layout_width="63dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/posterlombakecil"
         android:layout_height="43dp" />
+
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
@@ -30,6 +33,21 @@
             android:textColor="#000000"
             android:textSize="10dp"
             android:text="hahahahahahahahahahahahahahahahahahahahahahahahaha"/>
+
+        <TextView
+            android:paddingBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="More.."
+            android:textSize="12dp"
+            android:textAlignment="viewEnd"
+            android:id="@+id/textView"
+            android:layout_weight="1" />
 
     </LinearLayout>
 </LinearLayout>

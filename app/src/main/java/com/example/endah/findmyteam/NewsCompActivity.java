@@ -14,9 +14,9 @@ import android.widget.Toast;
 
 public class NewsCompActivity extends AppCompatActivity {
     ListView newsList;
-    String judul[] = {"India", "China", "australia", "Portugle", "America", "NewZealand"};
-    String contentNews[] = {"IndiaIndiaIndiaIndiaIndiaIndia", "ChinaChinaChinaChina", "australiaaustraliaaustraliaaustraliaaustralia", "PortuglePortuglePortuglePortugle", "America", "NewZealand"};
-    int flags[] = {R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo};
+    String judul = "ITCC 2017 Information Technology Creative";
+    String contentNews = "Himpunan Mahasiswa Teknologi Informasi (HMTI -Udayana) menyelenggarakan sebuah acara tahunan: ITCC";
+    int flags = R.drawable.posterlombakecil;
 
 
     @Override
@@ -24,15 +24,8 @@ public class NewsCompActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news_comp_activity);
         newsList = (ListView) findViewById(R.id.newsSimpleListView);
-        NewsCustomAdapter customAdapter = new NewsCustomAdapter(getApplicationContext(), judul, flags, contentNews);
+        NewsCustomAdapter customAdapter = new NewsCustomAdapter(NewsCompActivity.this, judul, flags, contentNews);
         newsList.setAdapter(customAdapter);
-
-        newsList.setOnClickListener(new NewsCompActivity() {
-            @Override
-            public void onItemClick (View v) {
-                Toast.makeText(getApplicationContext(), "hahah", Toast.LENGTH_SHORT).show();
-            }
-        });
 
     }
 }

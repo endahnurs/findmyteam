@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView myTeam;
     TextView FindPeople;
     TextView history;
+    TextView dashb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         myTeam = (TextView) findViewById(R.id.myteamtxtview);
         FindPeople = (TextView) findViewById(R.id.findpeopletxtview);
         history = (TextView) findViewById(R.id.historytxtview);
+        dashb = (TextView) findViewById(R.id.dashboard);
 
         newsComp .setOnClickListener(new View.OnClickListener()
         {
@@ -34,13 +36,47 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
         myTeam .setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 Intent it;
-                it = new Intent(MainActivity.this, TeamViewActivity.class);
+                it = new Intent(MainActivity.this, MyTeamActivity.class);
+                startActivity(it);
+            }
+        });
+
+        FindPeople .setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent it;
+                it = new Intent(MainActivity.this, findmyteamactivity.class);
+                startActivity(it);
+            }
+        });
+
+        history .setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent it;
+                it = new Intent(MainActivity.this, myfriendactivity.class);
+                startActivity(it);
+            }
+        });
+
+        dashb .setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent it;
+                it = new Intent(MainActivity.this, AdminMenuActivity.class);
                 startActivity(it);
             }
         });

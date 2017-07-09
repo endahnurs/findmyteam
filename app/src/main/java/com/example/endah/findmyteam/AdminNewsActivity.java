@@ -5,20 +5,23 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 /**
- * Created by endah on 7/7/2017.
+ * Created by endah on 7/9/2017.
  */
 
-public class ProfileUserActivity extends Activity {
+public class AdminNewsActivity extends Activity{
+
     ListView newsList;
     String judul = "ITCC 2017 Information Technology Creative";
     String contentNews = "Himpunan Mahasiswa Teknologi Informasi (HMTI -Udayana) menyelenggarakan sebuah acara tahunan: ITCC";
-    int pict = R.drawable.posterlombakecil;
+    int flags = R.drawable.posterlombakecil;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.profile_activity);
-        newsList = (ListView) findViewById(R.id.joidcompListView);
-        JoinCompProfilAdapter customAdapter = new JoinCompProfilAdapter(getApplicationContext(), judul, pict, contentNews);
+        setContentView(R.layout.news_admin_activity);
+        newsList = (ListView) findViewById(R.id.adminnewsSimpleListView);
+        AdminNewsAdapter customAdapter = new AdminNewsAdapter(AdminNewsActivity.this, judul, flags, contentNews);
         newsList.setAdapter(customAdapter);
+
     }
 }

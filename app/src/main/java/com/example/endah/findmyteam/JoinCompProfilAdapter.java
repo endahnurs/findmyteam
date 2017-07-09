@@ -14,12 +14,12 @@ import android.widget.TextView;
 
 public class JoinCompProfilAdapter extends BaseAdapter {
     Context context;
-    String judul[];
-    String isi[];
-    int img[];
+    String judul;
+    String isi;
+    int img;
     LayoutInflater inflter;
 
-    public JoinCompProfilAdapter(Context applicationContext, String[] judul, int[] images, String[] isi) {
+    public JoinCompProfilAdapter(Context applicationContext, String judul, int images, String isi) {
         this.context = applicationContext;
         this.isi = isi;
         this.judul = judul;
@@ -29,7 +29,7 @@ public class JoinCompProfilAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return judul.length;
+        return 5;
     }
 
     @Override
@@ -48,9 +48,9 @@ public class JoinCompProfilAdapter extends BaseAdapter {
         TextView isiview = (TextView)           view.findViewById(R.id.contextneewsprofiltextview);
         TextView judulview = (TextView)           view.findViewById(R.id.judulprofiltextview);
         ImageView icon = (ImageView) view.findViewById(R.id.imgprofiltextview);
-        judulview.setText(judul[i]);
-        isiview.setText(isi[i]);
-        icon.setImageResource(img[i]);
+        judulview.setText(judul);
+        isiview.setText(isi);
+        icon.setImageResource(img);
         return view;
     }
 }

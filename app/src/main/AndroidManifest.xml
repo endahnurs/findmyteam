@@ -22,6 +22,15 @@
         <activity android:name=".TeamViewActivity"></activity>
         <activity android:name=".CommentViewActivity"></activity>
         <activity android:name=".ProfileUserActivity" android:theme="@style/Main"></activity>
+        <activity android:name=".NewsDetile"></activity>
+        <activity android:name=".TeamViewActivity"></activity>
+        <activity android:name=".CreateTeamActivity"></activity>
+        <activity android:name=".MyTeamActivity"></activity>
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".findmyteamactivity"></activity>
+        <activity android:name=".myfriendactivity"></activity>
+        <activity android:name=".AdminMenuActivity"></activity>
+        <activity android:name=".AdminNewsActivity"></activity>
 
     </application>
 

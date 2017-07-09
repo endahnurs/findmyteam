@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/findteampp"
+        android:paddingTop="3dp"
+        android:layout_width="100dp"
+        android:layout_height="78dp"
+        android:src="@drawable/pp"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/findteamnamagroup"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="27dp"
+            android:text="Zahra Team" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#2F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/findteamjoin"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Join Team"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#2F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/findteamview"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="View Team"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

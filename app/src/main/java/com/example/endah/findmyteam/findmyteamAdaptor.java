@@ -9,16 +9,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * Created by endah on 7/5/2017.
+ * Created by endah on 7/9/2017.
  */
 
-public class TeamviewCustomAdapter extends BaseAdapter {
+public class findmyteamAdaptor extends BaseAdapter {
     Context context;
     String teamname;
     int imgteam;
     LayoutInflater inflter;
 
-    public TeamviewCustomAdapter(Context applicationContext, String teamname, int imgteam) {
+    public findmyteamAdaptor(Context applicationContext, String teamname, int imgteam) {
         this.context = applicationContext;
         this.teamname = teamname;
         this.imgteam = imgteam;
@@ -42,9 +42,9 @@ public class TeamviewCustomAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        view = inflter.inflate(R.layout.team , null);
-        TextView teamnameview = (TextView)           view.findViewById(R.id.namateamview);
-        ImageView pp = (ImageView) view.findViewById(R.id.ppteamview);
+        view = inflter.inflate(R.layout.findteam , null);
+        TextView teamnameview = (TextView)           view.findViewById(R.id.findteamnamagroup);
+        ImageView pp = (ImageView) view.findViewById(R.id.findteampp);
         teamnameview.setText(teamname);
         pp.setImageResource(imgteam);
         return view;

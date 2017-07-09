@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:id="@+id/adminjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:text="ITCC 2017 Information Technology Creative"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/adminimg"
+            android:layout_width="111dp"
+            android:src="@drawable/posterlombakecil"
+            android:layout_height="95dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/white"
+                android:background="#2F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deadline : 25 Agustus 2017"
+                android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/ic_edit" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/ic_delete"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/admincontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Himpunan Mahasiswa Teknologi Informasi (HMTI -Udayana) menyelenggarakan sebuah acara tahunan: ITCC"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="More.."
+                android:textSize="12dp"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
